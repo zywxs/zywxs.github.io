@@ -3,22 +3,23 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/uploads/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/uploads/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/uploads/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/uploads/logo.svg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.13.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"default"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="本站用来记录个人学习和测试记录。">
 <meta property="og:type" content="website">
@@ -59,6 +60,9 @@
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -80,6 +84,10 @@
 
 
 
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
 
 
 
@@ -113,6 +121,8 @@
 
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Yao"
+      src="/uploads/avatar.png">
   <p class="site-author-name" itemprop="name">Yao</p>
   <div class="site-description" itemprop="description">本站用来记录个人学习和测试记录。</div>
 </div>
@@ -120,12 +130,15 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
   </nav>
 </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
 
 
 
@@ -162,7 +175,7 @@
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/12/%E4%BD%BF%E7%94%A8Hexo-Admin%E6%8F%92%E4%BB%B6%E5%86%99%E6%96%87%E6%A1%A3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/uploads/avatar.png">
       <meta itemprop="name" content="Yao">
     </span>
 
@@ -235,459 +248,10 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/12/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Yao">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Yao's Blog">
-      <meta itemprop="description" content="本站用来记录个人学习和测试记录。">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Yao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/10/12/test/" class="post-title-link" itemprop="url">centos安装ldap软件</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2022-10-12 09:41:20 / 修改时间：09:45:41" itemprop="dateCreated datePublished" datetime="2022-10-12T09:41:20+08:00">2022-10-12</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <ul>
-<li>安装ldap软件</li>
-</ul>
-<pre><code>     yum list |grep openldap
-     yum install -y openldap-servers openldap-clients migrationtools samba-common samba samba-client compat-openldap
-</code></pre>
-<pre><code>[root@sambatest ~]# rpm -qa |grep ldap
-openldap-2.4.44-5.el7.x86_64
-php56w-ldap-5.6.32-1.w7.x86_64
-openldap-servers-2.4.44-5.el7.x86_64
-openldap-clients-2.4.44-5.el7.x86_64
-compat-openldap-2.3.43-5.el7.x86_64
-</code></pre>
-<ul>
-<li>同步时间</li>
-</ul>
-<pre><code>    yum -y install ntp
-    ntpdate pool.ntp.org
-</code></pre>
-<ul>
-<li>创建数据库</li>
-</ul>
-<pre><code>    cp /usr/share/openldap-servers/DB_CONFIG.example /var/lib/ldap/DB_CONFIG
-    chown ldap:ldap /var/lib/ldap/DB_CONFIG
-</code></pre>
-<ul>
-<li>关闭SELINUX&amp;firewalld</li>
-</ul>
-<pre><code>    getenforce
-    setenforce 0
-    sed -i &#39;s/SELINUX=enforcing/SELINUX=disabled/&#39; /etc/selinux/config
-    systemctl stop firewalld
-    systemctl disable firewalld
-</code></pre>
-<ul>
-<li>配置ldap管理员密码</li>
-</ul>
-<pre><code>    slappasswd
-    echo &#123;SSHA&#125;9mw746actU8BWigTbjBlHDgCZTPF63xB &gt; pw.txt
-</code></pre>
-<ul>
-<li>配置配置文件</li>
-</ul>
-<pre><code>    本例基于centos7安装，由于centos7中ldap与centos6中配置差别较大，我对7不太熟悉，因此从centos6复制配置文件slapd.conf同样可以使用。
-cat /etc/openldap/slapd.conf
-#
-# See slapd.conf(5) for details on configuration options.
-# This file should NOT be world readable.
-#
-
-include         /etc/openldap/schema/corba.schema
-include         /etc/openldap/schema/core.schema
-include         /etc/openldap/schema/cosine.schema
-include         /etc/openldap/schema/duaconf.schema
-include         /etc/openldap/schema/dyngroup.schema
-include         /etc/openldap/schema/inetorgperson.schema
-include         /etc/openldap/schema/java.schema
-include         /etc/openldap/schema/misc.schema
-include         /etc/openldap/schema/nis.schema
-include         /etc/openldap/schema/openldap.schema
-include         /etc/openldap/schema/ppolicy.schema
-include         /etc/openldap/schema/collective.schema
-include         /etc/openldap/schema/samba.schema
-
-# Allow LDAPv2 client connections.  This is NOT the default.
-allow bind_v2
-
-# Do not enable referrals until AFTER you have a working directory
-# service AND an understanding of referrals.
-#referral       ldap://root.openldap.org
-
-pidfile         /var/run/openldap/slapd.pid
-argsfile        /var/run/openldap/slapd.args
-
-# Load dynamic backend modules
-# - modulepath is architecture dependent value (32/64-bit system)
-# - back_sql.la overlay requires openldap-server-sql package
-# - dyngroup.la and dynlist.la cannot be used at the same time
-
-modulepath /usr/lib/openldap
-modulepath /usr/lib64/openldap
-
-# moduleload accesslog.la
-# moduleload auditlog.la
-# moduleload back_sql.la
-# moduleload chain.la
-# moduleload collect.la
-# moduleload constraint.la
-# moduleload dds.la
-# moduleload deref.la
-# moduleload dyngroup.la
-# moduleload dynlist.la
-# moduleload memberof.la
-# moduleload pbind.la
-# moduleload pcache.la
-# moduleload ppolicy.la
-# moduleload refint.la
-# moduleload retcode.la
-# moduleload rwm.la
-# moduleload seqmod.la
-# moduleload smbk5pwd.la
-# moduleload sssvlv.la
-moduleload syncprov.la
-# moduleload translucent.la
-# moduleload unique.la
-# moduleload valsort.la
-
-# The next three lines allow use of TLS for encrypting connections using a
-# dummy test certificate which you can generate by running
-# /usr/libexec/openldap/generate-server-cert.sh. Your client software may balk
-# at self-signed certificates, however.
-TLSCACertificatePath /etc/openldap/certs
-TLSCertificateFile &quot;\&quot;OpenLDAP Server\&quot;&quot;
-TLSCertificateKeyFile /etc/openldap/certs/password
-
-# Sample security restrictions
-#       Require integrity protection (prevent hijacking)
-#       Require 112-bit (3DES or better) encryption for updates
-#       Require 63-bit encryption for simple bind
-# security ssf=1 update_ssf=112 simple_bind=64
-
-# Sample access control policy:
-#       Root DSE: allow anyone to read it
-#       Subschema (sub)entry DSE: allow anyone to read it
-#       Other DSEs:
-#               Allow self write access
-#               Allow authenticated users read access
-#               Allow anonymous users to authenticate
-#       Directives needed to implement policy:
-# access to dn.base=&quot;&quot; by * read
-# access to dn.base=&quot;cn=Subschema&quot; by * read
-# access to *
-#       by self write
-#       by users read
-#       by anonymous auth
-#
-# if no access controls are present, the default policy
-# allows anyone and everyone to read anything but restricts
-# updates to rootdn.  (e.g., &quot;access to * by * read&quot;)
-#
-# rootdn can always read and write EVERYTHING!
-
-# enable on-the-fly configuration (cn=config)
-database config
-access to *
-        by dn.exact=&quot;gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth&quot; ma                                                                             nage
-        by * none
-
-# enable server status monitoring (cn=monitor)
-database monitor
-access to *
-        by dn.exact=&quot;gidNumber=0+uidNumber=0,cn=peercred,cn=external,cn=auth&quot; re                                                                             ad
-        by dn.exact=&quot;cn=cq,dc=drive-inno,dc=com&quot; read
-        by * none
-
-#######################################################################
-# database definitions
-#######################################################################
-
-database        bdb
-suffix          &quot;dc=drive-inno,dc=com&quot;
-checkpoint      1024 15
-rootdn          &quot;cn=cq,dc=drive-inno,dc=com&quot;
-# Cleartext passwords, especially for the rootdn, should
-# be avoided.  See slappasswd(8) and slapd.conf(5) for details.
-# Use of strong authentication encouraged.
-# rootpw                secret
-# rootpw                &#123;crypt&#125;ijFYNcSNctBYg
-rootpw  &#123;SSHA&#125;9mw746actU8BWigTbjBlHDgCZTPF63xB
-# The database directory MUST exist prior to running slapd AND
-# should only be accessible by the slapd and slap tools.
-# Mode 700 recommended.
-directory       /var/lib/ldap
-
-# Indices to maintain for this database
-index objectClass                       eq,pres
-index ou,cn,mail,surname,givenname      eq,pres,sub
-index uidNumber,gidNumber,loginShell    eq,pres
-index uid,memberUid                     eq,pres,sub
-index nisMapName,nisMapEntry            eq,pres,sub
-index entryCSN,entryUUID                eq
-# Replicas of this database
-#replogfile /var/lib/ldap/openldap-master-replog
-#replica host=ldap-1.example.com:389 starttls=critical
-#     bindmethod=sasl saslmech=GSSAPI
-#     authcId=host/ldap-master.example.com@EXAMPLE.COM
-loglevel -1
-overlay syncprov
-syncprov-checkpoint 100 10
-syncprov-sessionlog 100
-</code></pre>
-<ul>
-<li>检测配置文件是否有语法错误</li>
-</ul>
-<pre><code> slaptest -f /etc/openldap/slapd.conf
-</code></pre>
-<ul>
-<li>启动前需要赋予&#x2F;var&#x2F;lib&#x2F;ldap&#x2F; 所有者权限否则会报错</li>
-</ul>
-<pre><code>    chown -R ldap.ldap /var/lib/ldap/
-    
-</code></pre>
-<ul>
-<li>创建刷新配置脚本</li>
-</ul>
-<pre><code>    由于配置过程中会多次更新配置文件干脆写一个重置脚本
-    #!/bin/sh
-    systemctl stop slapd
-    rm -rf /etc/openldap/slapd.d/*
-    slaptest -f /etc/openldap/slapd.conf -F /etc/openldap/slapd.d/
-    chown -R ldap.ldap /etc/openldap/slapd.d/
-    systemctl restart slapd
-    
-    bash reset_ldap.sh
-</code></pre>
-<ul>
-<li>添加测试用户并导出数据</li>
-</ul>
-<pre><code>    groupadd test1
-    groupadd test2
-    useradd user1 -g test1
-    useradd user2 -g test1
-    useradd user3 -g test2
-    useradd user4 -g test2
-    grep &quot;:10[0-9][0-9]&quot; /etc/passwd &gt; /root/passwd
-    cat passwd
-    grep &quot;10[0-9][0-9]&quot; /etc/group &gt; /root/group
-    cat group
-   编辑migrate_common.ph修改域名
-    vi /usr/share/migrationtools/migrate_common.ph
-</code></pre>
-<ul>
-<li>安装phpldapadmin通过WEB管理LDAP</li>
-</ul>
-<pre><code>    yum install -y httpd php php-mbstring php-pear
-    yum -y install phpldapadmin
-    $servers-&gt;setValue(&#39;login&#39;,&#39;attr&#39;,&#39;dn&#39;);    这一行的注释去掉
-    //$servers-&gt;setValue(&#39;login&#39;,&#39;attr&#39;,&#39;uid&#39;);  这一行注释掉
-    vi /etc/phpldapadmin/config.php
-    修改phpldapadmin的配置文件，访问控制权限vim /etc/httpd/conf.d/phpldapadmin.conf，允许谁访问
-    vi /etc/httpd/conf.d/phpldapadmin.conf
-    systemctl start httpd
-</code></pre>
-<ul>
-<li>导入admin用户数据</li>
-</ul>
-<pre><code>yum -y install migrationtools
-vim /usr/share/migrationtools/migrate_common.ph
-修改：
-</code></pre>
-<pre><code>  ldapadd -x -D &quot;cn=cq,dc=drive-inno,dc=com&quot; -W -f root.ldif
-  通过以下命令查询
-  ldapsearch -x -b &quot;cn=cq,dc=drive-inno,dc=com&quot;
-cat root.ldif
-# extended LDIF
-#
-# LDAPv3
-# base &lt;dc=drive-inno,dc=com&gt; with scope subtree
-# filter: (objectclass=*)
-# requesting: ALL
-#
-
-# drive-inno.com
-dn: dc=drive-inno,dc=com
-objectClass: dcObject
-objectClass: organization
-o: ldap
-dc: drive-inno
-
-# cq, drive-inno.com
-dn: cn=cq,dc=drive-inno,dc=com
-objectClass: organizationalRole
-cn: cq
-
-# search result
-search: 2
-result: 0 Success
-
-# numResponses: 3
-# numEntries: 2
-  
-    systemctl restart slapd
-</code></pre>
-<ul>
-<li>开启日志</li>
-</ul>
-<pre><code>   vim /etc/rsyslog.conf
-   加上local4.*                                     /var/log/slapd/slapd.log
-   vim /etc/openldap/slapd.conf 
-   加上loglevel -1
-    
-   mkdir /var/log/slapd
-   chmod 755 /var/log/slapd/
-   chown ldap.ldap /var/log/slapd/
-   systemctl restart slapd
-</code></pre>
-<ul>
-<li>导入基础数据</li>
-</ul>
-<pre><code>   yum -y install migrationtools
-   vim /usr/share/migrationtools/migrate_common.ph
-   /usr/share/migrationtools/migrate_base.pl &gt; base.ldif
-   
-   cd  /usr/share/migrationtools
-    ./migrate_passwd.pl /etc/passwd passwd.ldif
-    ./migrate_group.pl /etc/group group.ldif
-</code></pre>
-<ul>
-<li>安装samba</li>
-</ul>
-<pre><code>   yum -y install samba-common samba samba-client
-cat /etc/samba/smb.conf
-[global]
-
-workgroup = WORKGROUP
-
-server string = Samba-ldap Server Version %v
-
-netbios name = samba-ldapsam
-
-log file = /var/log/samba/log.%m
-
-max log size = 50
-
-security = user
-
-passdb backend = ldapsam:ldap://192.168.1.111/
-
-ldap suffix = &quot;dc=drive-inno,dc=com&quot;
-
-ldap admin dn = &quot;cn=cq,dc=drive-inno,dc=com&quot;
-
-ldap user suffix = &quot;ou=People,dc=drive-inno,dc=com&quot;
-
-ldap group suffix = &quot;ou=group,dc=drive-inno,dc=com&quot;
-
-ldap delete dn = no
-
-ldap passwd sync = yes
-
-ldap ssl = no
-[homes]
-        comment = Home Directories
-        valid users = %S, %D%w%S
-        browseable = No
-        read only = No
-        inherit acls = Yes
-
-[printers]
-        comment = All Printers
-        path = /var/tmp
-        printable = Yes
-        create mask = 0600
-        browseable = No
-
-[print$]
-        comment = Printer Drivers
-        path = /var/lib/samba/drivers
-        write list = root
-        create mask = 0664
-        directory mask = 0775
-</code></pre>
-<ul>
-<li>把OpenLDAP的密码传给Samba</li>
-</ul>
-<pre><code>     smbpasswd -w 123456
-     systemctl restart smb
-</code></pre>
-<ul>
-<li>配置客户端</li>
-</ul>
-<pre><code>    yum install -y openldap-clients nss-pam-ldapd 
-    #authconfig authconfig-gtk 这个只是备注在这里
-    service sssd stop &amp;&amp; chkconfig sssd off
-    authconfig-tui
-</code></pre>
-<ul>
-<li>测试</li>
-</ul>
-<p>&#96;&#96;&#96;<br>     id user1<br>     cat &#x2F;etc&#x2F;passwd |grep user1<br>     smbpasswd -a user1<br>     smbpasswd -a user2<br>     smbpasswd -a user3<br>     smbpasswd -a user3</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/03/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/uploads/avatar.png">
       <meta itemprop="name" content="Yao">
     </span>
 
@@ -773,7 +337,25 @@ ldap ssl = no
   </span>
   <span class="author" itemprop="copyrightHolder">Yao</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
     </div>
@@ -781,7 +363,7 @@ ldap ssl = no
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
 
@@ -790,10 +372,11 @@ ldap ssl = no
 
 
   
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
 
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
